@@ -1,0 +1,199 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.title_small{
+    font-size: 20px;
+}
+h1{
+    justify-content: center;
+    gap: 20px;
+}
+.form_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+
+}
+.form_control{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+input, select, textarea{
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+input:focus{
+    outline-color: blue;
+}
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+}
+button{
+    background-color: blue;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color:white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: #ccc;
+    border: 2px solid green;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+
+}
+.textarea_control{
+    grid-column: 1 / span 2;
+}
+
+
+.textarea_control textarea{
+   width: 100%;
+}
+@media (max-width:460px);
+.textarea_control{
+    grid-column: 1 / span 1;
+}
+
+/* Extra CSS for enhanced beauty */
+body {
+    background: linear-gradient(135deg, #4a9adc7a 0%, #0dbe92ff 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+}
+  
+
+.form_control input,
+.form_control select,
+.textarea_control textarea {
+    background: #abe0ed79;
+    border: 1px solid #b3c6e0;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.form_control input:focus,
+.form_control select:focus,
+.textarea_control textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 2px #b3d1ff;
+}
+label {
+    color: #100e0eff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.small {
+    color: #3381dbff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.button_container button {
+    background: linear-gradient(90deg, #4a90e2 0%, #3575d3 100%);
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.15);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.button_container button:hover {
+    background: linear-gradient(90deg, #3575d3 0%, #4a90e2 100%);
+    color: #fff;
+    border: 2px solid #4a90e2;
+}
+select {
+    cursor: pointer;
+}
+input[type="file"] {
+    background: #085cbd84;
+    border: 1px dashed #032658ff;
+    padding: 8px;
+}
+
+
+
+@media (max-width: 600px) {
+    .apply_box {
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .form_container {
+        gap: 10px;
+    }
+    .button_container {
+        justify-content: center;
+    }
+}
+
+
+.footer {
+    background: linear-gradient(90deg, #4a90e2 0%, #3575d3 100%);
+    color: #fff;
+    padding: 24px 0 12px 0;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -2px 12px rgba(74, 144, 226, 0.10);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.footer_content p {
+    margin: 6px 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+@media (max-width: 600px) {
+    .footer {
+        font-size: 14px;
+        padding: 16px 0 8px 0;
+    }
+    .footer_content p {
+        font-size: 14px;
+    }
+}
+
+/* Header styles for Diproma Infotech */
+.header {
+    width: 100%;
+    background: linear-gradient(90deg, #0e5fd8be 0%, #d8dee5ff 100%);
+    color: #fff;
+    padding: 32px 0 18px 0;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(74, 144, 226, 0.10);
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-bottom: 24px;
+}
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(31, 38, 135, 0.10);
+}
+@media (max-width: 600px) {
+    .header {
+        padding: 18px 0 10px 0;
+    }
+    .header h1 {
+        font-size: 1.6rem;
+    }
+}
